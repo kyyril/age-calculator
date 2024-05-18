@@ -77,7 +77,7 @@ const AgeCalculator = () => {
             placeholder='YYY'
             min="1900"
             max={new Date().getFullYear()}
-          />
+        />
         </div>
       </form>
       <div className='my-9 relative'>
