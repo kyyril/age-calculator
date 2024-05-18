@@ -35,8 +35,8 @@ const AgeCalculator = () => {
 
   return (
     <div className=" bg-gray-100 flex flex-col items-center justify-center min-h-screen font-semibold">
-      <div className='rounded-xl bg-white p-8'>
-      <form onSubmit={handleSubmit} className="flex flex-auto gap-2" >
+      <div className='bg-white p-8 shadow-xl rounded-br-full'>
+      <form onSubmit={handleSubmit} className="flex flex-auto gap-2 bg-white p-0 " >
         <div className="flex flex-col">
           <label htmlFor="day" className="block text-gray-700">Day:</label>
           <input
@@ -44,7 +44,7 @@ const AgeCalculator = () => {
             id="day"
             value={day}
             onChange={(e) => setDay(e.target.value)}
-            className="mt-1 p-2 border border-gray-300 rounded-xl w-full"
+            className="mt-2 p-2 border border-gray-300 rounded-xl w-full"
             required
             placeholder='DD'
             min="1"
@@ -58,7 +58,7 @@ const AgeCalculator = () => {
             id="month"
             value={month}
             onChange={(e) => setMonth(e.target.value)}
-            className="mt-1 p-2 border border-gray-300 rounded-xl w-full"
+            className="mt-2 p-2 border border-gray-300 rounded-xl w-full"
             required
             placeholder='MM'
             min="1"
@@ -72,7 +72,7 @@ const AgeCalculator = () => {
             id="year"
             value={year}
             onChange={(e) => setYear(e.target.value)}
-            className="mt-1 p-2 border border-gray-300 rounded-xl w-full"
+            className="mt-2 p-2 border border-gray-300 rounded-xl w-full"
             required
             placeholder='YYY'
             min="1900"
@@ -80,21 +80,21 @@ const AgeCalculator = () => {
           />
         </div>
       </form>
-      <div className='relative'>
-      <hr className='my-8 border-b-gray-600' />
-        <button type="submit" onClick={handleSubmit} className=" bg-gray-950 text-white p-2 rounded-full active:bg-gray-700 absolute -top-5 right-0 ">
+      <div className='my-9 relative'>
+      <hr className='flex items-start mr-11 border-b-gray-600 ' />
+        <button type="submit" onClick={handleSubmit} className="hover:rounded-full bg-gray-900 text-white p-2 rounded-xl active:bg-blue-700 absolute -top-5 right-12 shadow-8xl">
           Go
         </button>
       {age !== null && (
-        <div className=" flex flex-col gap-x-4 text-xl">
+        <div className=" flex flex-col gap-y-1 items-start text-4xl my-4">
           <div className='flex items-center gap-2'>
-            <span className=' text-blue-500 gap-x-3 text-3xl'>{age.years}</span> Year
+            <span className='mr-1 text-blue-500 gap-x-3 text-4xl'>{age.years}</span><span className='text-gray-700'>Years</span>
           </div>
           <div className='flex items-center gap-2'>
-            <span className=' text-blue-500 text-3xl'>{age.months}</span> Months
+            <span className='mr-1 text-blue-500 text-4xl'>{age.months}</span><span className='text-gray-700'>Months</span>
           </div>
           <div className='flex items-center gap-2'>
-            <span className=' text-blue-500 gap-x-3 text-3xl'>{age.days}</span> Days
+            <span className='mr-1 text-blue-500 gap-x-3 text-4xl'>{age.days}</span><span className='text-gray-700'>Days</span>
           </div>
         </div>
       )}
