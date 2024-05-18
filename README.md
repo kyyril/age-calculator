@@ -50,47 +50,6 @@ This is a basic web application that allows users to calculate their age based o
 3. Click the "Calculate Age" button.
 4. Your age will be displayed below the button.
 
-## Project Structure
-
-```
-age-calculator/
-├── public/
-│   ├── index.html
-│   └── ...
-├── src/
-│   ├── components/
-│   │   └── AgeCalculator.js
-│   ├── App.js
-│   ├── index.css
-│   ├── index.js
-│   └── ...
-├── tailwind.config.js
-├── postcss.config.js
-├── package.json
-└── README.md
-```
-
-## Tailwind CSS Configuration
-
-The Tailwind CSS configuration is set up in the `tailwind.config.js` file:
-
-```js
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-```
-
-## Contributing
-
-If you would like to contribute to this project, please open an issue or submit a pull request. Contributions are welcome!
-
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
