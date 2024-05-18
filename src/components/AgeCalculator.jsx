@@ -9,7 +9,7 @@ const AgeCalculator = () => {
 
   const calculateAge = (day, month, year) => {
     const today = new Date();
-    const birthDate = new Date(year, month - 1, day); // Month is zero-indexed
+    const birthDate = new Date(year, month - 1, day); 
 
     let years = today.getFullYear() - birthDate.getFullYear();
     let months = today.getMonth() - birthDate.getMonth();
@@ -35,6 +35,7 @@ const AgeCalculator = () => {
 
   return (
     <div className=" bg-gray-100 flex flex-col items-center justify-center min-h-screen font-semibold">
+        <h1 className='text-gray-800 font-extrabold text-3xl shadow-text-gray-600 '>input</h1><span className='text-blue-500 font-extrabold mb-5 text-4xl shadow-text-gray-600 '>BIRTH DATE👇</span>
       <div className='bg-white p-8 shadow-xl rounded-br-full'>
       <form onSubmit={handleSubmit} className="flex flex-auto gap-2 bg-white p-0 " >
         <div className="flex flex-col">
@@ -82,7 +83,7 @@ const AgeCalculator = () => {
       </form>
       <div className='my-9 relative'>
       <hr className='flex items-start mr-11 border-b-gray-600 ' />
-        <button type="submit" onClick={handleSubmit} className="hover:rounded-full bg-gray-900 text-white p-2 rounded-xl active:bg-blue-700 absolute -top-5 right-12 shadow-8xl">
+        <button type="submit" onClick={handleSubmit} className="hover:rounded-full bg-gray-900 text-white p-2 rounded-xl active:bg-blue-500 absolute -top-5 right-12 shadow-8xl">
           Go
         </button>
       {age !== null && (
