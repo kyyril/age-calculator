@@ -1,5 +1,3 @@
-Sure! Here’s a README for your simple age calculator app.
-
 ```markdown
 # Age Calculator App
 
