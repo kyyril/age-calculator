@@ -23,7 +23,7 @@ This is a basic web application that allows users to calculate their age based o
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/age-calculator.git
+   git clone https://github.com/kyyril/age-calculator.git
    cd age-calculator
    ```
 
@@ -47,10 +47,3 @@ This is a basic web application that allows users to calculate their age based o
 2. Enter your birthdate using the date picker.
 3. Click the "Calculate Age" button.
 4. Your age will be displayed below the button.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-```
-
-Replace the placeholder `https://github.com/your-username/age-calculator.git` with your actual GitHub repository URL if you decide to host it on GitHub. This README provides an overview of the project, installation instructions, usage guidelines, and other relevant information.
